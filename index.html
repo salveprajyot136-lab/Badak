@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Only For You 🤍</title>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Sacramento&family=Quicksand:wght@300;400;500&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<!-- Background -->
+<div class="bg">
+  <div class="petals"></div>
+  <div class="hearts"></div>
+  <canvas id="fireworks"></canvas>
+</div>
+
+<!-- Card -->
+<div class="card" id="card">
+
+  <!-- LOCKED -->
+  <div id="locked">
+    <div class="lock-icon">🔒</div>
+    <h1 class="title">For You 🤍</h1>
+
+    <input id="password" type="password" placeholder="Today's password">
+    <button onclick="unlock()">Unlock 💖</button>
+
+    <p id="error"></p>
+    <div id="countdown" class="countdown"></div>
+  </div>
+
+  <!-- UNLOCKED -->
+  <div id="unlocked" class="hidden">
+    <h2 id="nameGlow" class="name-glow">Badak 💖</h2>
+    <h3 id="dayTitle"></h3>
+    <pre id="message"></pre>
+  </div>
+
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
