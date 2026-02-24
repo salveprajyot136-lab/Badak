@@ -1,5 +1,5 @@
 // ===== TEST MODE =====
-const TEST_MODE = true; // true = test
+const TEST_MODE = false; // true = test
 const TEST_DAY = 15;
 
 // ===== DATE =====
