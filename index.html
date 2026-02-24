@@ -1,46 +1,37 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Only For You 🤍</title>
+  <meta charset="UTF-8">
+  <title>Only For You 🤍</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Sacramento&family=Quicksand:wght@300;400;500&display=swap" rel="stylesheet">
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Sacramento&family=Poppins:wght@300;400;500&display=swap" rel="stylesheet">
 
-<link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="style.css">
 </head>
-
 <body>
 
-<!-- Background -->
-<div class="bg">
-  <div class="petals"></div>
-  <div class="hearts"></div>
-  <canvas id="fireworks"></canvas>
-</div>
+<canvas id="fireworks"></canvas>
 
-<!-- Card -->
-<div class="card" id="card">
+<div class="petals"></div>
 
-  <!-- LOCKED -->
-  <div id="locked">
+<div class="container">
+
+  <div id="lockScreen" class="card">
     <div class="lock-icon">🔒</div>
-    <h1 class="title">For You 🤍</h1>
+    <h1 class="title">Only For You 🤍</h1>
 
-    <input id="password" type="password" placeholder="Today's password">
-    <button onclick="unlock()">Unlock 💖</button>
+    <input type="password" id="password" placeholder="Enter today's password">
+    <button onclick="unlock()">Unlock</button>
 
     <p id="error"></p>
-    <div id="countdown" class="countdown"></div>
+    <div id="countdown"></div>
   </div>
 
-  <!-- UNLOCKED -->
-  <div id="unlocked" class="hidden">
-    <h2 id="nameGlow" class="name-glow">Badak 💖</h2>
-    <h3 id="dayTitle"></h3>
-    <pre id="message"></pre>
+  <div id="content" class="card hidden">
+    <h1 id="nameGlow">Badak 🤍</h1>
+    <div id="message"></div>
   </div>
 
 </div>
